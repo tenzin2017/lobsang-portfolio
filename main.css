@@ -1,0 +1,88 @@
+/*      CSS RESET   */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+  /* Custom Starts Here */
+html, body {
+      height: 100%;
+}
+
+header {
+    background-image: linear-gradient(to right,
+        rgba(0,0,0,0.9), 
+        rgba(0,0,0,0.7)
+      ), url(https://www.umbrellaconsultants.com/files/resources/outer-banks-web-development-hosting.jpg);
+    height: 100%;
+    background-size: cover;
+    background-color: black;
+    color: white;
+}
+.profile-picture img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+header .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.info .name {
+    padding-right: 20px;
+    text-align: center;
+}
+.name h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 4rem;
+}
+.name h3 {
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.typing {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 0;
+    color: green;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: 2px solid green;
+    width: 29ch;
+    animation: type 5s steps(29), blink 500ms steps(1) infinite;
+}
+@keyframes type {
+    from { width: 0ch}
+    to { width: 29}
+}
+@keyframes blink {
+    50% {border-color: transparent}
+}
